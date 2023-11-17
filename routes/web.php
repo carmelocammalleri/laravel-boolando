@@ -14,9 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('home', function () {
-    return view('welcome');
+    $nameSection = '| Home';
+    return view('welcome', compact('nameSection'));
 });
 
 Route::get('about', function () {
-    return view('about');
+    $nameSection = '| About';
+    return view('about', compact('nameSection'));
+});
+
+Route::get('contacts', function () {
+    $nameSection = '| Contacts';
+    return view('contacts', compact('nameSection'));
 });
