@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $nameSection = '| Home';
-    return view('welcome', compact('nameSection'));
+    $products = config("products");
+    return view('welcome', compact('nameSection','products'));
 });
+
 
 Route::get('about', function () {
     $nameSection = '| About';
