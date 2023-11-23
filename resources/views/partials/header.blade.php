@@ -1,9 +1,14 @@
-<header>
-    <h1> io sono l'header</h1>
+<header class="fixed">
+    <div class="logo">
+        <img src="/public/img/boolean-logo.png" alt="logo">
+    </div>
 
-    <ul class=" list-unstyled d-flex">
-        <li class="mx-2"><a href="home">home</a></li>
-        <li class="mx-2"><a href="about">about</a></li>
-        <li class="mx-2"><a href="contacts">contacts</a></li>
-    </ul>
+    <div class="menu-pages">
+
+        <ul class=" list-unstyled d-flex">
+            <li class="mx-2"><a href="/">home</a></li>
+            <li class="mx-2"><a href="about">about</a></li>
+            <li class="mx-2"><a href="contacts">contacts</a></li>
+        </ul>
+    </div>
 </header>
